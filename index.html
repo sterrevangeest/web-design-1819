@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title></title>
+  </head>
+  <body>
+    <div
+      id="lijst1"
+      class="lijst1"
+      class="lijstjes"
+      ondrop="drop_handler(event);"
+      ondragover="dragover_handler(event);"
+    >
+      <h1>To do</h1>
+      <div class="task" id="task1">
+        <a
+          id="p1"
+          id="task1"
+          draggable="true"
+          ondragstart="dragstart_handler(event);"
+          href="#"
+        >
+          Taak 1
+        </a>
+
+        <a
+          id="verplaats"
+          class="verplaats"
+          href="#"
+          onkeydown="verplaats(event)"
+          >Done!</a
+        >
+      </div>
+      <div class="task" id="task2">
+        <a
+          id="p2"
+          id="task2"
+          draggable="true"
+          ondragstart="dragstart_handler(event);"
+          href="#"
+        >
+          Taak 2
+        </a>
+
+        <a
+          id="verplaats2"
+          class="verplaats2"
+          href="#"
+          onkeydown="verplaats(event)"
+          >Done!</a
+        >
+      </div>
+    </div>
+    <div
+      id="lijst2"
+      class="lijst2"
+      ondrop="drop_handler(event);"
+      ondragover="dragover_handler(event);"
+    >
+      <h1>Done</h1>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
