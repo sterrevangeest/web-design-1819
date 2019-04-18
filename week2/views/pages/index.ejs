@@ -1,0 +1,120 @@
+<!-- views/pages/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+<body>
+  <!DOCTYPE html>
+  <html>
+
+    <body>
+      <header class="">
+        <h1>Nieuws</h1>
+        <a class="leeslijst" href="#">Leeslijst <span>3</span></a>
+      </header>
+      <section>
+        <h2>Laatste nieuws</h2>
+        <div class="headline_news">
+          <a href="/article/<%= data[0].id %>">
+            <article class="tint">
+              <h3>
+                <%= data[0].title %>
+              </h3>
+              <img
+                src="<%= data[0].urlToImage %>"
+                alt=""
+              />
+            </article>
+          </a>
+          <a href="/article/<%= data[1].id %>">
+            <article class="tint">
+              <h3> <%= data[1].title %></h3>
+              <img
+                src="<%= data[1].urlToImage %>"
+                alt=""
+              />
+            </article>
+          </a>
+        </div>
+      </section>
+      <nav>
+        <a href="#politiek">Navigatie overslaan</a>
+        <a href="#" onkeydown="wijzigvoorkeuren(event)">Wijzig voorkeuren</a>
+        <ul >
+          <a href="#politiek" onkeydown="removefromlist(event)">Politiek</a>
+          <a href="#economie" onkeydown="removefromlist(event)">Economie</a>
+          <a href="#" onkeydown="removefromlist(event)">Sport</a>
+          <a href="#" onkeydown="removefromlist(event)">Tech</a>
+          <a href="#" onkeydown="removefromlist(event)">Cultuur & Media</a>
+          <a href="#" onkeydown="removefromlist(event)">Regionaal</a>
+          <a class="metal" href="/metal" onkeydown="removefromlist(event)">Metal</a>
+        </ul>
+
+      <p class="moreonderwerpen">meer onderwerpen</p>
+        <ul id="intactivelist">
+
+          <a class="inactive" href="#" onkeydown="addtolist(event)">Uit</a>
+          <a class="inactive" href="#" onkeydown="addtolist(event)">Entertainment</a>
+          <a class="inactive" href="#" onkeydown="addtolist(event)">Voetbal</a>
+          <a class="inactive" href="#" onkeydown="addtolist(event)">Auto</a>
+          <a class="inactive" href="#" onkeydown="addtolist(event)">Wonen</a>
+          <a class="inactive" href="#" onkeydown="addtolist(event)">Extra</a>
+        </ul>
+        <a  class="moreonderwerpen" href="#" onkeydown="removeallclasses(event)">Gereed</a>
+
+      </nav>
+      <section id="politiek">
+        <h2>Politiek</h2>
+        <!-- <a href="#">Meer over Politiek</a> -->
+        <div class="category_news">
+          <a href="/article/<%= data[4].id %>">
+            <article>
+              <h4><%= data[4].title %></h4>
+              <img
+                src="<%= data[4].urlToImage %>"
+                alt=""
+              />
+            </article>
+          </a>
+          <a href="/article/<%= data[5].id %>">
+            <article>
+              <h4><%= data[5].title %></h4>
+              <img
+                src="<%= data[5].urlToImage %>"
+                alt=""
+              />
+            </article>
+          </a>
+        </div>
+      </section>
+      <section id="economie">
+        <h2>Economie</h2>
+        <!-- <a href="#">Meer over Politiek</a> -->
+        <div class="category_news">
+          <a href="/article/<%= data[7].id %>">
+            <article>
+              <h4><%= data[7].title %></h4>
+              <img
+                src="<%= data[7].urlToImage %>"
+                alt=""
+              />
+            </article>
+          </a>
+          <a href="/article/<%= data[6].id %>">
+            <article>
+              <h4><%= data[6].title %></h4>
+              <img
+                src="<%= data[6].urlToImage %>"
+                alt=""
+              />
+            </article>
+          </a>
+        </div>
+      </section>
+      
+    </body>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+  <script src="/index.js"></script>
+</html>

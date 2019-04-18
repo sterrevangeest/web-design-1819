@@ -1,0 +1,21 @@
+{
+  "name": "week2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "newsapi": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}

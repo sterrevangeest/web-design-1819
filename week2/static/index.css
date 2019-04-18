@@ -1,0 +1,240 @@
+html {
+  margin: 1em;
+}
+
+body {
+  font-family: Roboto;
+  background: #f6f6f6;
+  max-width: 60em;
+  color: #2c325b;
+  margin: auto;
+  margin-top: 3em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+h1 {
+  display: inline-block;
+  margin-bottom: 2em;
+  font-size: 2.5em;
+}
+
+h2 {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1em;
+  display: inline;
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin: 0;
+  max-width: 80%;
+}
+
+section div {
+  display: flex;
+}
+
+section {
+  margin-top: 2em;
+}
+
+section a:first-of-type {
+  margin-right: 1em;
+}
+
+section:first-of-type {
+  margin-top: 0em;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.headline_news {
+  margin-top: 1em;
+}
+
+#economie {
+  margin-bottom: 5em;
+}
+
+.category_news article {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.category_news img {
+  width: 40%;
+  margin-right: 1em;
+}
+
+.tint {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 77, 255, 0.4);
+  transition: all 0.3s linear;
+}
+
+.tint:hover:before {
+  background: none;
+}
+
+#economie article,
+#politiek article {
+  position: relative;
+  height: 100%;
+  margin-top: 1em;
+}
+
+section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  position: absolute;
+  color: white;
+  padding: 1em;
+  bottom: 0;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 0;
+  max-width: 80%;
+}
+
+nav {
+  margin: 1em 0;
+  margin-bottom: 3em;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background-color: #d9e4ff;
+}
+
+nav ul a {
+  color: inherit;
+  padding: 1em 1.5em;
+  outline: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul a:focus {
+  background-color: #004dff;
+  color: white;
+}
+
+nav ul a {
+  flex-grow: 1;
+}
+.metal {
+  background-color: black;
+  color: red;
+}
+
+.leeslijst {
+  background-color: #004dff;
+  color: white;
+  padding: 0.6em 1.5em;
+  border-radius: 5em;
+  text-decoration: none;
+  font-size: 1rem;
+  height: 100%;
+}
+
+.leeslijst span {
+  background-color: white;
+  color: #004dff;
+  border-radius: 100%;
+  padding: 0.2em 0.5em;
+  margin-left: 0.5em;
+}
+
+.leeslijst:focus {
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: inline;
+}
+
+#activelist a {
+  background-color: #efefef;
+  color: inherit;
+}
+
+#intactivelist a {
+  background-color: #efefef;
+  color: inherit;
+}
+
+#activelist a::before {
+  content: " -";
+  background-color: red;
+  color: white;
+  padding: 0.1em 0.5em;
+  border-radius: 1000em;
+  margin-right: 0.5em;
+}
+
+#activelist a:focus::before {
+  content: " verwijder";
+}
+
+#intactivelist a::before {
+  content: " +";
+  background-color: #49f149; /* green */
+  color: white;
+  padding: 0.1em 0.5em;
+  border-radius: 1000em;
+  margin-right: 0.5em;
+}
+
+#intactivelist a:focus::before {
+  content: " toevoegen";
+}
+
+#activelist a:focus {
+  background-color: lightgrey;
+}
+
+#intactivelist a:focus {
+  background-color: lightgrey;
+}
+
+.moreonderwerpen {
+  display: none;
+}
+
+#activelist ~ .moreonderwerpen {
+  display: inline;
+}
