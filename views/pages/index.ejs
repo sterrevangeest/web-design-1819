@@ -9,15 +9,15 @@
   <html>
 
     <body>
-      <header class="">
+      <header class="" >
         <h1>Nieuws</h1>
-        <a class="leeslijst" href="#">Leeslijst <span>3</span></a>
+        <button autofocus id="0.1" class="leeslijst" href="#">Leeslijst <span>3</span></button >
       </header>
       <section>
         <h2>Laatste nieuws</h2>
         <div class="headline_news">
-          <a href="/article/<%= data[0].id %>">
-            <article class="tint">
+          <a href="/article/<%= data[0].id %>" id="1.1" >
+            <article class="tint" >
               <h3>
                 <%= data[0].title %>
               </h3>
@@ -27,8 +27,8 @@
               />
             </article>
           </a>
-          <a href="/article/<%= data[1].id %>">
-            <article class="tint">
+          <a href="/article/<%= data[1].id %>" id="1.2">
+            <article class="tint" >
               <h3> <%= data[1].title %></h3>
               <img
                 src="<%= data[1].urlToImage %>"
@@ -38,37 +38,35 @@
           </a>
         </div>
       </section>
-      <nav>
-        <a href="#politiek">Navigatie overslaan</a>
-        <a href="#" onkeydown="wijzigvoorkeuren(event)">Wijzig voorkeuren</a>
+      <nav >
+        <a id="2.1" href="#politiek">Navigatie overslaan</a>
+        <a id="2.2" href="#?" onclick="wijzigvoorkeuren(event)" onkeydown="wijzigvoorkeuren(event)">Wijzig voorkeuren</a>
         <ul >
-          <a href="#politiek" onkeydown="removefromlist(event)">Politiek</a>
-          <a href="#economie" onkeydown="removefromlist(event)">Economie</a>
-          <a href="#" onkeydown="removefromlist(event)">Sport</a>
-          <a href="#" onkeydown="removefromlist(event)">Tech</a>
-          <a href="#" onkeydown="removefromlist(event)">Cultuur & Media</a>
-          <a href="#" onkeydown="removefromlist(event)">Regionaal</a>
-          <a class="metal" href="/metal" onkeydown="removefromlist(event)">Metal</a>
+          <a id="3.1" href="" onclick="removefromlist(event)" onkeydown="removefromlist(event)">Politiek</a>
+          <a id="3.2" href="#" onclick="removefromlist(event)"  onkeydown="removefromlist(event)">Economie</a>
+          <a  id="3.3" href="#" onclick="removefromlist(event)" onkeydown="removefromlist(event)">Sport</a>
+          <a id="3.4" href="#" onclick="removefromlist(event)"  onkeydown="removefromlist(event)">Tech</a>
+          <a id="3.5" href="#" onclick="removefromlist(event)"  onkeydown="removefromlist(event)">Cultuur & Media</a>
+          <a id="3.6" href="#" onclick="removefromlist(event)"  onkeydown="removefromlist(event)">Regionaal</a>
+          <a id="3.7" class="metal" href="/metal" onclick="removefromlist(event)" onkeydown="removefromlist(event)">Metal</a>
         </ul>
 
       <p class="moreonderwerpen">meer onderwerpen</p>
         <ul id="intactivelist">
-
-          <a class="inactive" href="#" onkeydown="addtolist(event)">Uit</a>
-          <a class="inactive" href="#" onkeydown="addtolist(event)">Entertainment</a>
-          <a class="inactive" href="#" onkeydown="addtolist(event)">Voetbal</a>
-          <a class="inactive" href="#" onkeydown="addtolist(event)">Auto</a>
-          <a class="inactive" href="#" onkeydown="addtolist(event)">Wonen</a>
-          
+          <a class="inactive" href="#" onclick="addtolist(event)"  onkeydown="addtolist(event)">Uit</a>
+          <a class="inactive" href="#" onclick="addtolist(event)"  onkeydown="addtolist(event)">Entertainment</a>
+          <a class="inactive" href="#" onclick="addtolist(event)"  onkeydown="addtolist(event)">Voetbal</a>
+          <a class="inactive" href="#" onclick="addtolist(event)"  onkeydown="addtolist(event)">Auto</a>
+          <a class="inactive" href="#" onclick="addtolist(event)"  onkeydown="addtolist(event)">Wonen</a>
         </ul>
-        <a  class="moreonderwerpen" href="#" onkeydown="removeallclasses(event)">Gereed</a>
+        <a class="moreonderwerpen" href="#" onclick="removeallclasses(event)" onkeydown="removeallclasses(event)">Gereed</a>
 
       </nav>
-      <section id="politiek">
+      <section id="politiek" >
         <h2>Politiek</h2>
         <!-- <a href="#">Meer over Politiek</a> -->
         <div class="category_news">
-          <a href="/article/<%= data[4].id %>">
+          <a href="/article/<%= data[4].id %>" id="4.1">
             <article>
               <h4><%= data[4].title %></h4>
               <img
@@ -77,7 +75,7 @@
               />
             </article>
           </a>
-          <a href="/article/<%= data[5].id %>">
+          <a href="/article/<%= data[5].id %>" id="4.2">
             <article>
               <h4><%= data[5].title %></h4>
               <img
@@ -92,7 +90,7 @@
         <h2>Economie</h2>
         <!-- <a href="#">Meer over Politiek</a> -->
         <div class="category_news">
-          <a href="/article/<%= data[7].id %>">
+          <a href="/article/<%= data[7].id %>" id="5.1">
             <article>
               <h4><%= data[7].title %></h4>
               <img
@@ -101,7 +99,7 @@
               />
             </article>
           </a>
-          <a href="/article/<%= data[6].id %>">
+          <a href="/article/<%= data[6].id %>" id="5.2">
             <article>
               <h4><%= data[6].title %></h4>
               <img

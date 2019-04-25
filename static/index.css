@@ -1,3 +1,8 @@
+*:focus {
+  outline-color: red;
+  outline-width: 3px;
+}
+
 html {
   margin: 1em;
 }
