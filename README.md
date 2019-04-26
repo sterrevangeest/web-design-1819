@@ -1,58 +1,72 @@
-# Web Design @cmda-minor-web 1819
-//Werken met en voor echte mensen.
+🎓 Web Design @cmda-minor-web · 2018-2019
 
-In dit vak gaan we dingen ontwerpen voor echte mensen. 
+# Een toegankelijke nieuws website voor Marijn
 
-Je bent ingedeeld in een groep. Bij elke groep horen een paar opdrachten. Die mag je zelf kiezen. 
+Dit is een nieuws website speciaal toegankelijk voor Marijn. Marijn is motorisch gestoord. Hij gebruikt zijn computer dus anders dan wij. Hij heeft veel moeite met fijne motoriek.
 
-## Maandag
-Op maandag in de eerste week kies je een van de volgende kleine opdrachten om mee op gang te komen.
+![](screen.png)
 
-Voor het maken van deze opdrachtjes maak je gebruik van de *Exclusive Design Principles:*
+<!-- ### Onderzoek -->
 
-- Study Situation
-- Ignore Conventions
-- Prioritise Identity
-- Add Nonsense
+<!-- [Xbox Adaptive Controller](https://www.behance.net/gallery/77277575/Xbox-Adaptive-Controller-Microsoft-Device-Design-Team?tracking_source=search%257Caccessibility)
 
-### Marie
+[Pharmaceutical Packaging](https://www.behance.net/gallery/79121005/Recollaid-Pharmaceutical-Packaging?tracking_source=search%257Caccessibility)
 
-Marie is Doof (met een hoofdletten inderdaad, dat betekent dat ze zichzelf als Doof identificeert, wat simpelgezegd betekent dat haar eerste taal Nederlandse Gebarentaal is). Je zult begrijpen dat Marie moeite heeft met dingen waar geluid een grote rol speelt.
+[Custom eCommerce Website](https://www.behance.net/gallery/17913001/Custom-eCommerce-Website-JADF-(with-animated-GIFs?tracking_source=search%257Caccessibility) -->
 
-<details>
-<summary>Hoe werkt een podcast voor Marie?</summary>
-<p>In een transcriptie gaat natuurlijk nogal wat nuance verloren. Maak een oplossing die minimaal net zo prettig is voor iemand die niet kan luisteren als voor iemand die wel kan luisteren. 
-</details>
+### Test 1
 
-<details>
-<summary>Hoe werken closed captions voor Marie?</summary>
-<p>Voor Marie gaat er enorm veel nuance verloren tijdens het kijken naar een film of een documentaire. Bij veel films worden closed captions aangeboden, maar die zijn zo neutraal als maar kan. Hoe zou je closed captions 
-</details>
+**Aannames**
 
-### Larissa
+- Marijn gebruikt alleen zijn toetsenbord. Niet zijn trackpad.
+- Marijn gebruikt de spatiebalk om te scrollen.
+- Gebruikt stickey keys.
 
-Larissa is blind. Ze maakt gebruik van een brailleregel, en van een screenreader. Je snapt dat heel veel van de gangbare design patterns niet optimaal werken voor haar omdat ze 100% vanuit een visueel oogpunt ontworpen zijn.
+**Bevindingen**
 
-<details>
-<summary>Hoe zou een navigatie voor Larissa kunnen werken?</summary>
-<p>Tijdens het introductiecollege heb je een filmpje gezien van een niet-getrainde screenreadergebruiker die een navigatiemenu gebruikt. Dat was niet optimaal. Het menu helemaal onderaan de pagina zetten is weer onhandig voor als je dat wel nodig hebt. Stel nou dat *iedereen* blind was en een screenreader gebruikte, wat zou dan het normale navigatie-pattern zijn?
-</details>
+Algemeen:
 
-<details>
-<summary>Ontwerp grappige, geanimeerde illustraties.</summary>
-<p>Hannes Wallrafen maakt <a href="http://www.geluidinzicht.nl/geluidsprojecten/">audiocollages</a>. Deze wil hij graag op een nieuwe website zetten. Hier wil hij grappige, korte geanimeerde illustraties bij hebben. Ontwerp bij één audiocollage één geanimeerde illustratie <em>die zowel voor Larissa, als voor jezelf grappig is</em>.
-</details>
+- `Tab` toets in Safari werkt niet zoals in meeste andere browsers.
+- Marijn gebruikt zijn `Tab` key minder dan ik had verwacht.
+- Marijn gebruikt wél zijn trackpad.
+- Marijn gebruikt het liefst toetsen dicht bij elkaar.
+- Voor Marijn is het lastiger om het bovenste gedeelte van zijn toetsenbord te gebruiken.
+- Marijn gebruikt liefst zo min mogelijk toetsen om eindresultaat te bereiken (soms zijn spaties bijvoorbeeld overbodig).
 
-### Marijn
+test
 
-Marijn is motorisch gestoord. Hij gebruikt zijn computer dus anders dan wij. Hij heeft veel moeite met fijne motoriek. Hij gebruikt zijn toetsenbord om te navigeren, en in de Accessibility settings van zijn Mac heeft hij Sticky Keys aan staan.
+**Vraag 1: Wil je voor mij een artikel gaan lezen wat je het meest aanspreekt?**
 
-<details>
-<summary>Ontwerp een date picker voor Marijn</summary>
-<p>. Hij reist veel met de trein, en hij moet van tevoren aangeven welke trein hij wil nemen zodat er iemand is om hem te helpen met zijn rolstoel. Date-pickers zijn over het algemeen priegelig, en niet ontworpen voor iemand die afhankelijk is van zijn toetsenbord.
-</details>
+**Resultaat**: Marijn klikte met zijn muis een artikel (redelijk onderaan de pagina aan).
 
-<details>
-<summary>Ontwerp een date picker voor Marijn</summary>
-<p>. Hij reist veel met de trein, en hij moet van tevoren aangeven welke trein hij wil nemen zodat er iemand is om hem te helpen met zijn rolstoel. Date-pickers zijn over het algemeen priegelig, en niet ontworpen voor iemand die afhankelijk is van zijn toetsenbord.
-</details>
+**Vraag 2: Kun je weer terug gaan naar de overzichtspagina?**
+**Resultaat**: Dat gebeurde zo snel dat ik in eerste instantie niet door had hoe hij dit deed. Maar hij legde mij uit dat hij dit met zijn touchbar doet.
+
+**Vraag 3: Wil je voor mij de voorkeuren van de navigatie veranderen?**
+
+Hij klikte het linkje wijzig voorkeuren aan met zijn muis (wat ik niet had verwacht). Daarna wilde hij met zijn muis onderdelen van de navigatie verwijderen. Maar omdat ik ervanuit was gegaan dat hij zijn trackpad niet gebruikte was dit linkje niet klikbaar. Met de toetsen lukte het uiteindelijk ook.
+
+**Vraag 4: Stel dat je nu tevreden zou zijn, wat zou je doen?**
+
+Marijn raakte met zijn muis het knopje gereed. (Deed daarna niks).
+
+Aanpassingen na deze test:
+
+- Aangezien Marijn meer zijn muis gebruikt, minder de tab gebruikt dan verwacht en het liefst toetsen dicht bij elkaar gebruikt heb ik ervoor gezorgd dat hij de website ook kan besturen met zijn pijltjestoetsen (i.s.m.) met de enter dichtbij. Hierbij heb ik een autofocus toegevoegd aan de button.
+- Het aanpassen van de navigatie kan ook met de muis.
+
+### Test 2
+
+**Vraag 1: Wil je voor nog een keer de voorkeuren van de navigatie veranderen?**
+
+Marijn navigeerd, in tegenstelling met vorige test, met de pijltjes toetsen. Het verplaatsen van de onderwerpen lukte net als vorige keer. Dit deed hij in tegenstelling tot vorige keer ook met zijn toetsenbord.
+Hij probeerde ook met zijn pijltjestoetsen de navigatie aan te passen.
+
+**Vraag 2: Stel dat je nu tevreden zou zijn, wat zou je doen?**
+
+Hij zei: dan zou ik op gereed drukken (hij probeerde dit ook met zijn muis), maar dat knopje is te klein... Hij lukte hem inderdaad niet de knop in te drukken.
+
+Volgende aanpassingen na deze test:
+
+- Gereed knop groter.
+- Navigatie ook met pijltjestoeten toegankelijk.
