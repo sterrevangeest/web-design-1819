@@ -33,8 +33,6 @@ Algemeen:
 - Voor Marijn is het lastiger om het bovenste gedeelte van zijn toetsenbord te gebruiken.
 - Marijn gebruikt liefst zo min mogelijk toetsen om eindresultaat te bereiken (soms zijn spaties bijvoorbeeld overbodig).
 
-test
-
 **Vraag 1: Wil je voor mij een artikel gaan lezen wat je het meest aanspreekt?**
 
 **Resultaat**: Marijn klikte met zijn muis een artikel (redelijk onderaan de pagina aan).
@@ -58,6 +56,9 @@ Aanpassingen na deze test:
 ### Test 2
 
 **Vraag 1: Wil je voor nog een keer de voorkeuren van de navigatie veranderen?**
+
+- Navigeerd soms ook met pijlen.
+- Hij gebruikt de toetsen die dicht bij elkaar zitten. Dus stel hij heeft net genavigeerd met zijn pijltjestoetsen. Dan gebruikt hij die meestal in combinatie met de enter. s
 
 Marijn navigeerd, in tegenstelling met vorige test, met de pijltjes toetsen. Het verplaatsen van de onderwerpen lukte net als vorige keer. Dit deed hij in tegenstelling tot vorige keer ook met zijn toetsenbord.
 Hij probeerde ook met zijn pijltjestoetsen de navigatie aan te passen.
